@@ -15,6 +15,7 @@ app.use(
         extended: true,
     }),
 );
+
 app.use(express.json());
 
 app.engine('hbs', exphbs.engine({ extname: 'hbs', defaultLayout: 'main' }));
