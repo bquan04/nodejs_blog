@@ -17,7 +17,7 @@ app.use(
 );
     app.use(express.json());
 
-             app.engine('hbs', exphbs.engine({ extname: 'hbs', defaultLayout: 'main' }));
+                   app.engine('hbs', exphbs.engine({ extname: 'hbs', defaultLayout: 'main' }));
       
                 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'resource/views'));
