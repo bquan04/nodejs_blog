@@ -15,11 +15,11 @@ app.use(
         extended: true,
     }),
 );
-    app.use(express.json());
+app.use(express.json());
 
-                   app.engine('hbs', exphbs.engine({ extname: 'hbs', defaultLayout: 'main' }));
-      
-                app.set('view engine', 'hbs');
+app.engine('hbs', exphbs.engine({ extname: 'hbs', defaultLayout: 'main' }));
+
+app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'resource/views'));
 
 //route init
